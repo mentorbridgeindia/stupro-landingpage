@@ -3,6 +3,7 @@ import { Container, Row, Col, Badge, Button } from "react-bootstrap";
 import { ReactComponent as Check } from "../assets/check.svg";
 import NavBar from "./Components/NavBar";
 import AppNavbar from "./Components/NavBar";
+import MobileScreen from "./Components/MobileScreen";
 
 
 const HeroSection: React.FC = () => {
@@ -26,20 +27,24 @@ const HeroSection: React.FC = () => {
         ></canvas>
       </div>
       <Row className="w-100">
-        
-        <Col md={12} className="d-flex flex-column align-items-center">
-          
-          <h1 className="display-4 fw-bold text-dark text-center mt-5 mb-3">
-            Protect your web applications <br /> with the elegance of a ninja
-          </h1>
-          <p className="lead text-muted text-center mt-3 mb-3">
-            All-in-one security solution, combining power, flexibility, and
-            <br />
-            intelligence to make your security journey a whole lot easier
-          </p>
-         
-        </Col>
-      </Row>
+  <Col md={12} className="d-flex flex-column align-items-center">
+    <h1 
+      className="display-4 fw-bold text-center mt-5 mb-3" 
+      style={{
+        background: "linear-gradient(90deg, #FFA800, #FF5733)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent"
+      }}
+    >
+      Empowering Students <br /> with Smart Solutions
+    </h1>
+    <p className="lead text-muted text-center mt-3 mb-3">
+      A platform designed to enhance learning, collaboration, and <br />
+      innovation for students worldwide.
+    </p>
+  </Col>
+</Row>
+
       
     </Container>
     </>
