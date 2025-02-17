@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
     >
       Empowering Students <br /> with Smart Solutions
     </h1>
-    <p className="lead text-muted text-center mt-3 mb-3">
+    <p className="lead text-muted text-center mt-3 mb-3" style={{fontWeight:"bold"}}>
       A platform designed to enhance learning, collaboration, and <br />
       innovation for students worldwide.
     </p>
