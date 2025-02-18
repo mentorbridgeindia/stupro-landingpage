@@ -5,7 +5,7 @@ const MobileScreen: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollPos(window.scrollY * 0.5); // Adjust speed if needed
+      setScrollPos(window.scrollY * 0.5); 
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -23,7 +23,7 @@ const MobileScreen: React.FC = () => {
         marginLeft:"200px",
       }}
     >
-      {/* Mobile Frame */}
+     
       <div
         style={{
           width: "275px",
@@ -41,13 +41,13 @@ const MobileScreen: React.FC = () => {
         {/* Scrollable Image */}
         <div style={{ height: "100%", overflow: "hidden", position: "relative" }}>
           <img
-            src={require("../../assets/homepage .png")} // Ensure correct path
+            src={require("../../assets/homepage .png")} 
             alt="Mobile UI"
             style={{
               width: "150%",
               marginLeft: "-55%",
               position: "absolute",
-              top: `-${scrollPos}px`, // Moves image up as page scrolls
+              top: `-${scrollPos}px`, 
               transition: "top 0.2s ease-out",
             }}
           />

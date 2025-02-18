@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap'
 import { FaGraduationCap } from 'react-icons/fa'
 
 const MoreFeaturesSection = () => {
-  // StuPro–themed card data
+ 
   const cardData = [
     { 
       title: 'Connect with Peers', 
@@ -23,16 +23,16 @@ const MoreFeaturesSection = () => {
     },
   ]
 
-  // Duplicate the cards for continuous scrolling effect
+  
   const allCards = [...cardData, ...cardData]
 
   return (
     <div className="mt-5">
-      <div style={{ marginLeft: "25%" }}>
+      <div style={{ marginLeft: "20px" }}>
         <h1>More Features</h1>
       </div>
       {/* Outer container to clip overflow */}
-      <div style={{ overflow: 'hidden', marginTop: "80px" }}>
+      <div style={{ overflow: 'hidden', marginTop: "80px", }}>
         {/* Scrolling container */}
         <div 
           style={{
@@ -45,11 +45,12 @@ const MoreFeaturesSection = () => {
             <Card 
               key={index} 
               style={{
-                width: '18rem', 
+                minWidth: '250px',  
+                maxWidth: '400px',
                 display: 'inline-block', 
                 marginRight: '20px',
-                wordWrap: 'break-word', // Ensure text doesn't overflow
-                overflow: 'hidden' // Hide anything exceeding the card bounds
+                wordWrap: 'break-word',
+                overflow: 'hidden'
               }}
             >
               <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
@@ -62,12 +63,13 @@ const MoreFeaturesSection = () => {
                   <Card.Title>{card.title}</Card.Title>
                   <Card.Text 
                     style={{
-                      fontSize: '0.9rem',  // Adjust text size to fit better
+                      fontSize: '0.9rem',  
                       color: 'black',
-                      textOverflow: 'ellipsis', // Add ellipsis for overflowed text
+                      textOverflow: 'ellipsis', 
                       overflow: 'hidden',
-                      whiteSpace: 'normal',  // Allow wrapping of text
-                      height: '4.5rem', // Limit height to avoid excessive text overflow
+                      whiteSpace: 'normal',  
+                      height: '5.5rem',
+                     
                     }}
                   >
                     {card.text}

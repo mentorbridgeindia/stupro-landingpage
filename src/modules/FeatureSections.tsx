@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, Row, Col } from 'react-bootstrap'
-import { FaRocket } from 'react-icons/fa'; // You can choose a different icon if needed
+import { FaRocket } from 'react-icons/fa';
 
 const FeatureSections = () => {
   return (
@@ -21,7 +21,7 @@ const FeatureSections = () => {
               }}
             >
               <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-                {/* Icon */}
+               
                 <FaRocket style={{ fontSize: "30px", marginBottom: "10px", color: "#FF8C00" }} />
                 {/* StuPro–themed title */}
                 <Card.Title style={{ marginLeft: "10%", fontSize: "1.25rem", fontWeight: "bold" }}>
@@ -34,7 +34,7 @@ const FeatureSections = () => {
               </div>
               {/* Image on the right side of the card */}
               <img
-                src="https://via.placeholder.com/100" // Replace with your image URL
+                src="https://via.placeholder.com/100" 
                 alt="StuPro Feature"
                 style={{ height: "100%", objectFit: "cover", borderRadius: "5px" }}
               />
@@ -76,7 +76,7 @@ const FeatureSections = () => {
   <Col style={{ paddingLeft: 0, paddingRight: 0 ,marginRight:"20px"}}>
     <Card
       style={{
-        width: "50%",
+        width: "52%",
         height: "100px",
         marginTop: "10px",
         background: "linear-gradient(to bottom, #F3c431, rgba(221, 222, 163, 1))"
@@ -102,7 +102,7 @@ const FeatureSections = () => {
     </Card>
     <Card
       style={{
-        width: "50%",
+        width: "52%",
         height: "100px",
         marginTop: "10px",
         background: "linear-gradient(to bottom, #F3c431, rgba(221, 222, 163, 1))"

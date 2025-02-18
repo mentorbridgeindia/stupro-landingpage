@@ -5,6 +5,7 @@ import MobileScreen from '../modules/Components/MobileScreen'
 import FeatureSections from '../modules/FeatureSections'
 import MoreFeaturesSection from '../modules/MoreFeaturesSection'
 import DownloadSection from '../modules/DownloadSection'
+import FooterSection from '../modules/FooterSection'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
      <FeatureSections/>
      <MoreFeaturesSection/>
      <DownloadSection/>
+     <FooterSection/>
     </div>
   )
 }

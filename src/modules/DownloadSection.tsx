@@ -1,59 +1,50 @@
-import React from 'react'
-import { Card, Button } from 'react-bootstrap'
-import { FaDownload } from 'react-icons/fa'; // Icon for download
+import React from 'react';
+import { Card, Button } from 'react-bootstrap';
+import { FaApple, FaGooglePlay } from 'react-icons/fa';
+ 
 
 const DownloadCard = () => {
   return (
-    <div style={{marginTop:"100px",marginLeft:"25%"}}>
-    <Card
-      className="bg-light text-white"
-      style={{ width: "75%", height: "250px", marginTop: "10px", display: 'flex', background: 'linear-gradient(to bottom, #F3c431, rgba(221, 222, 163, 1))' }}
-    >
-      <Card.Body
-        style={{
-          color: "black",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center"
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '50px' }}>
+      <Card
+        className="text-white"
+        style={{ 
+          width: '80%', 
+          height: '300px', 
+          display: 'flex', 
+          flexDirection: 'row',
+          background: 'linear-gradient(to right, #FFA726, #FF9800)',
+          borderRadius: '20px',
+          padding: '20px',
         }}
       >
-        {/* Left side - Title, Description, and Download Button */}
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-          {/* Icon */}
-          <FaDownload style={{ fontSize: "30px", marginBottom: "10px",marginLeft:"10%", color: "#FF8C00" }} />
-          
-          {/* Title */}
-          <Card.Title style={{ marginLeft: "10%", fontSize: "1.25rem", fontWeight: "bold" }}>
-            Download StuPro
-          </Card.Title>
-
-          {/* Description */}
-          <Card.Text style={{ marginLeft: "10%", fontSize: "0.9rem", color: "black" }}>
-            Click the button below to download the StuPro app and start connecting with peers!
-          </Card.Text>
-
-          {/* Download Button */}
-          <Button variant="primary" style={{ marginLeft: "10%" }}>
-            Download
-          </Button>
+        <div style={{ flex: 1, color: 'white', padding: '20px' }}>
+          <h2 style={{ fontWeight: 'bold' }}>Manage your cash easily</h2>
+          <p style={{ fontSize: '1rem', marginBottom: '20px' }}>
+            Download an app now and the various benefits you will get immediately.
+          </p>
+          <div style={{ display: 'flex', gap: '10px' }}>
+            <Button variant="dark" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 20px', borderRadius: '10px' }}>
+              <FaApple size={20} /> Download App
+            </Button>
+            <Button variant="dark" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 20px', borderRadius: '10px' }}>
+              <FaGooglePlay size={20} /> Download App
+            </Button>
+          </div>
         </div>
 
-        {/* Right side - Image */}
-        <div style={{ flex: 1 }}>
+        <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <img
-            src="https://via.placeholder.com/100" // Replace with your image URL
-            alt="StuPro App"
-            style={{
-              height: "100%",
-              objectFit: "cover",
-              borderRadius: "5px",
-            }}
+            src="https://via.placeholder.com/200" 
+            alt="App Preview"
+            style={{ height: '250px', borderRadius: '20px' }}
           />
         </div>
-      </Card.Body>
-    </Card>
+      </Card>
+
+      {/* Use the Footer Component */}
     </div>
   );
-}
+};
 
-export default DownloadCard
+export default DownloadCard;
