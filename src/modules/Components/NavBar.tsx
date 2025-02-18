@@ -21,7 +21,7 @@ const AppNavbar: React.FC = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mx-auto">
+            <Nav className="mx-auto" style={{fontWeight:"bold"}}>
               <Nav.Link href="#" className="text-warning fw-bold mx-3">Home</Nav.Link>
               <Nav.Link href="#" className="mx-3">Features</Nav.Link>
               <Nav.Link href="#" className="mx-3">Contact</Nav.Link>
