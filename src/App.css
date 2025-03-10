@@ -1,4 +1,11 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+@import "animate.css";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -35,5 +42,35 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.sub-title {
+  display: block;
+  margin-bottom: 3rem;
+  background: linear-gradient(44.44deg, #ed2775 7.79%, #ff7448 94.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.cuts-card {
+  padding: 1rem;
+  p {
+    text-align: left;
+  }
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.1),
+      0 30px 60px -30px rgba(107, 124, 147, 0.15);
+    background: linear-gradient(44.44deg, #ed2775 7.79%, #ff7448 94.18%);
+    color: #ffffff !important;
+
+    p {
+      color: #ffffff !important;
+    }
   }
 }

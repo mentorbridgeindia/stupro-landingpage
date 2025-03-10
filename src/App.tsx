@@ -1,14 +1,17 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from './pages/Home';
+import "./App.css";
+import Home from "./pages/Home";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Home/>
-    </div>
+    <ParallaxProvider>
+      <div className="App">
+        <Home />
+      </div>
+    </ParallaxProvider>
   );
-}
+};
 
 export default App;

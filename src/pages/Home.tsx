@@ -1,30 +1,38 @@
-import React from 'react'
-import HeroSection from '../modules/HeroSection'
-import AppNavbar from '../modules/Components/NavBar'
-import MobileScreen from '../modules/Components/MobileScreen'
-import GameChanger from '../modules/Components/GameChanger'
-import Features from '../modules/Components/Features'
-import ScrollPage from '../modules/Components/ScrollPage'
-import FeatureSections from '../modules/FeatureSections'
-import MoreFeaturesSection from '../modules/MoreFeaturesSection'
-import DownloadSection from '../modules/DownloadSection'
-import FooterSection from '../modules/FooterSection'
+import styled from "styled-components";
+import BentoGrid from "../components/BentoGrid";
+import DownloadCTA from "../components/DownloadCTA";
+import FAQSection from "../components/FAQSection";
+import FeatureGrid from "../components/FeatureGrid";
+import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection";
+import Navbar from "../components/Navbar";
+import USPSection from "../components/USPSection";
+import { CutsSection } from "../components/CutsSection";
+
+const PageWrapper = styled.div`
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #000000, #1a1a1a);
+  color: #ffffff;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+`;
 
 const Home = () => {
   return (
-    <div>
-      <AppNavbar/>
-      <HeroSection/>
-      <MobileScreen/>
-      <GameChanger/>
-      <Features/>
-      <ScrollPage/>
-      <FeatureSections/>
-      <MoreFeaturesSection/>
-      <DownloadSection/>
-      <FooterSection/>
-    </div>
-  )
-}
+    <PageWrapper>
+      <Navbar />
+      <HeroSection />
+      <CutsSection />
+      <FeatureGrid />
+      <USPSection />
+      {/* <MobileViewSection /> */}
+      <BentoGrid />
+      <FAQSection />
+      <DownloadCTA />
+      <Footer />
+    </PageWrapper>
+  );
+};
 
 export default Home;

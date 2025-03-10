@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+.bento-grid {
+  padding: 1rem;
+
+  .left-card {
+    text-align: left;
+    padding: 0 2rem;
+    background: radial-gradient(
+        217.75% 144.07% at 217.75% 107.58%,
+        rgba(127, 139, 210, 0.3) 0%,
+        rgba(89, 106, 197, 0) 100%,
+        rgba(89, 106, 197, 0) 100%
+      ),
+      #191934;
+    background-blend-mode: overlay, normal, normal;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+
+    * {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-style: normal;
+      background: linear-gradient(123.11deg, #ffffff -2.63%, #aa9cfc 104.28%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 46px;
+      line-height: 50px;
+      letter-spacing: -0.01em;
+    }
+
+    h6 {
+      text-align: left;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: -0.01em;
+    }
+
+    .left-text {
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      text-align: left;
+    }
+
+    .left-num {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 56px;
+      letter-spacing: -0.02em;
+
+      background: linear-gradient(
+        101.7deg,
+        #ffb366 23.03%,
+        #e9766f 75.73%,
+        #c04350 130.68%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+    .cat-text {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      gap: 6px;
+      position: absolute;
+      background: rgba(99, 106, 182, 0.21);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 9999px;
+    }
+
+    .cat-1 {
+      height: 48px;
+      left: 0px;
+      top: 247.39px;
+      transform: rotate(-54.55deg);
+      /* animation: flipInX 2s; */
+    }
+
+    .cat-2 {
+      height: 48px;
+      left: 149.4px;
+      top: 247.39px;
+      transform: rotate(-22.92deg);
+      /* animation: bounce 2s infinite alternate; */
+    }
+
+    .cat-3 {
+      height: 48px;
+      left: 10px;
+      top: 375px;
+      transform: rotate(-22.92deg);
+      /* animation: bounce 2s infinite; */
+    }
+
+    .cat-4 {
+      height: 48px;
+      left: 149.4px;
+      top: 375px;
+      transform: rotate(-2.92deg);
+      /* animation: bounce 2s infinite; */
+    }
+
+    .cat-5 {
+      height: 48px;
+      left: 129.4px;
+      top: 315px;
+      transform: rotate(-5.92deg);
+      /* animation: shakeX 2s infinite; */
+    }
+
+    @keyframes bounce {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  }
+
+  .right-card {
+    text-align: right;
+  }
+
+  .h-500 {
+    height: 475px;
+  }
+
+  .ellipse {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    &.pink {
+      background: #c883fb;
+    }
+
+    &.blue {
+      background: #83fbfb;
+    }
+
+    &.green {
+      background: #83fb9b;
+    }
+
+    &.yellow {
+      background: #fbfb83;
+    }
+
+    &.purple {
+      background: #aa9cfc;
+    }
+  }
+
+  .logo {
+    animation: flipInX 5s;
+    left: 175px;
+    svg {
+      width: 200px;
+      height: 175px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .bento-grid {
+    padding: 0 5rem;
+
+    .logo {
+      left: 285px;
+      svg {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .bento-grid {
+    .logo {
+      left: 620px;
+      svg {
+        width: 400px;
+        height: 325px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .bento-grid {
+    .logo {
+      left: 660px;
+      svg {
+        width: 400px;
+        height: 350px;
+      }
+    }
+  }
+}
+
+.left-ellipse-card {
+  background-image: url("../assets/LeftEllipseCard.svg");
+  background-size: cover;
+  background-position: center;
+}
