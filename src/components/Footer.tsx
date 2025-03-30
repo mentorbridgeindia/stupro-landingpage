@@ -167,8 +167,10 @@ const Footer = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <FooterTitle>Legal</FooterTitle>
-          <FooterLink href="#privacy">Privacy Policy</FooterLink>
-          <FooterLink href="#terms">Terms of Service</FooterLink>
+          <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
+          <FooterLink href="/terms-and-conditions">
+            Terms and Conditions
+          </FooterLink>
         </FooterColumn>
       </FooterGrid>
 

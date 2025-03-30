@@ -104,7 +104,7 @@ const MobileMenu = styled(motion.div)`
   }
 `;
 
-const Navbar = () => {
+const Navbar = ({ isHome = false }: { isHome?: boolean }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -139,8 +139,14 @@ const Navbar = () => {
           STUPRO
         </Logo>
         <NavLinks>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#contact">Contact</NavLink>
+          {isHome ? (
+            <NavLink href="/">Home</NavLink>
+          ) : (
+            <>
+              <NavLink href="#about">About</NavLink>
+              <NavLink href="#contact">Contact</NavLink>
+            </>
+          )}
           <CTAButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             Download Now
           </CTAButton>
@@ -160,8 +166,14 @@ const Navbar = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
           >
-            <NavLink href="#about">About</NavLink>
-            <NavLink href="#contact">Contact</NavLink>
+            {isHome ? (
+              <NavLink href="/">Home</NavLink>
+            ) : (
+              <>
+                <NavLink href="/#about">About</NavLink>
+                <NavLink href="/#contact">Contact</NavLink>
+              </>
+            )}
             <CTAButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               Download Now
             </CTAButton>
