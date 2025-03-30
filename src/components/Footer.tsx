@@ -7,7 +7,12 @@ import { ReactComponent as TwitterSvg } from "../assets/twitter.svg";
 import { ReactComponent as YoutubeSvg } from "../assets/youtube.svg";
 
 const FooterContainer = styled.footer`
-  background: #000000;
+  background: linear-gradient(
+    279.99deg,
+    #9f5ff1 -1.19%,
+    #ff54b0 50.96%,
+    #ff9f5a 99.95%
+  );
   padding: 5rem 5% 2rem;
   color: #ffffff;
 `;
@@ -36,7 +41,7 @@ const Logo = styled.div`
 `;
 
 const FooterText = styled.p`
-  color: #a0a0a0;
+  color: #fff;
   line-height: 1.6;
   font-size: 0.9rem;
 `;
@@ -48,13 +53,14 @@ const FooterTitle = styled.h4`
 `;
 
 const FooterLink = styled.a`
-  color: #a0a0a0;
+  color: #fff;
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s ease;
+  font-family: "Noto Serif", serif;
 
   &:hover {
-    color: #dcaa14;
+    color: #000;
   }
 `;
 
@@ -62,6 +68,7 @@ const SocialLinks = styled.div`
   display: flex;
   gap: 1rem;
   align-items: center;
+  font-family: "Noto Serif", serif;
 `;
 
 const SocialIcon = styled(motion.a)`
@@ -86,12 +93,14 @@ const SocialIcon = styled(motion.a)`
 `;
 
 const Copyright = styled.div`
-  text-align: center;
-  color: #a0a0a0;
+  color: #fff;
   margin-top: 4rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #fff;
   font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Noto Serif", serif;
 `;
 
 const Footer = () => {
@@ -106,49 +115,13 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <Logo>STUPRO</Logo>
-          <FooterText>
-            From Student to Professional
-            <br />
-            Faster. Smarter. Better.
-          </FooterText>
-          <SocialLinks>
-            <SocialIcon
-              href="#"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <TwitterSvg />
-            </SocialIcon>
-            <SocialIcon
-              href="#"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FacebookSvg />
-            </SocialIcon>
-            <SocialIcon
-              href="#"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <InstagramSvg />
-            </SocialIcon>
-            <SocialIcon
-              href="#"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <LinkedInSvg />
-            </SocialIcon>
-            <SocialIcon
-              href="#"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <YoutubeSvg />
-            </SocialIcon>
-          </SocialLinks>
+          <Logo>
+            <img
+              src="https://wfkq0nguanh0273r.public.blob.vercel-storage.com/logo-alone.png"
+              alt="Logo"
+              style={{ width: "125px", height: "150px" }}
+            />
+          </Logo>
         </FooterColumn>
 
         <FooterColumn
@@ -187,6 +160,46 @@ const Footer = () => {
 
       <Copyright>
         <FooterText>© {currentYear} StuPro. All rights reserved.</FooterText>
+        <FooterText>
+          From Student to Professional - Faster | Smarter | Better
+        </FooterText>
+        <SocialLinks>
+          <SocialIcon
+            href="#"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <TwitterSvg />
+          </SocialIcon>
+          <SocialIcon
+            href="#"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FacebookSvg />
+          </SocialIcon>
+          <SocialIcon
+            href="#"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <InstagramSvg />
+          </SocialIcon>
+          <SocialIcon
+            href="#"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <LinkedInSvg />
+          </SocialIcon>
+          <SocialIcon
+            href="#"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <YoutubeSvg />
+          </SocialIcon>
+        </SocialLinks>
       </Copyright>
     </FooterContainer>
   );

@@ -25,6 +25,7 @@ const Title = styled(motion.h2)`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 2rem;
+  font-family: "Noto Serif", serif;
 `;
 
 const Description = styled(motion.p)`
@@ -33,6 +34,7 @@ const Description = styled(motion.p)`
   max-width: 600px;
   margin: 0 auto 3rem;
   line-height: 1.6;
+  font-family: "Noto Serif", serif;
 `;
 
 const ButtonGroup = styled(motion.div)`
@@ -40,6 +42,7 @@ const ButtonGroup = styled(motion.div)`
   gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
+  font-family: "Noto Serif", serif;
 `;
 
 const StoreButton = styled(motion.a)`

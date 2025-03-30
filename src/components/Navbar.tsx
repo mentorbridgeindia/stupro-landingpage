@@ -22,6 +22,11 @@ const Logo = styled.div`
   background: #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Noto Serif", serif;
+  letter-spacing: 0.1rem;
 `;
 
 const NavLinks = styled.div`
@@ -59,7 +64,6 @@ const NavLink = styled(motion.a)`
 
 const CTAButton = styled(motion.button)`
   padding: 0.75rem 1.5rem;
-  /* background: linear-gradient(120deg, #dcaa14, #dcaa14); */
   background: #ffffff;
   border: none;
   border-radius: 25px;
@@ -125,7 +129,15 @@ const Navbar = () => {
             : "transparent",
         }}
       >
-        <Logo>StuPro</Logo>
+        <Logo>
+          <img
+            src="https://wfkq0nguanh0273r.public.blob.vercel-storage.com/logo-alone.png"
+            alt="Logo"
+            className="me-2"
+            style={{ width: "40px", height: "50px" }}
+          />
+          STUPRO
+        </Logo>
         <NavLinks>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#contact">Contact</NavLink>

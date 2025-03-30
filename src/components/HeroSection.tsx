@@ -1,7 +1,6 @@
-import React from "react";
-import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
+import styled from "styled-components";
 
 const HeroContainer = styled.section`
   min-height: 100vh;
@@ -40,9 +39,18 @@ const ContentWrapper = styled.div`
 const Title = styled(motion.h1)`
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
-  /* background: linear-gradient(120deg, #dcaa14, #dcaa14); */
   background: #ffffff;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+`;
+
+const Subtitle = styled(motion.h6)`
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: 800;
+  background: #ffffff;
+  -webkit-background-clip: text;
+  font-family: "Noto Serif", serif;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1.5rem;
 `;
@@ -85,16 +93,26 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Transform Your Mobile Experience
+          From Student to Professional
         </Title>
+        <Subtitle
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="app-text mt-5 mb-5"
+        >
+          Faster | Smarter | Better
+        </Subtitle>
         <Description
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          className="app-text mb-5 mt-5"
         >
-          Experience the next generation of mobile applications with our
-          revolutionary platform. Seamless integration, powerful features, and
-          stunning design all in one place.
+          StuPro is your career wingman, making sure you never miss an
+          opportunity to learn, practice, and grow. It’s not another course
+          platform—it’s a structured, action-based, no-fluff system to take you
+          from student to job-ready professional.
         </Description>
         <CTAButton
           initial={{ opacity: 0, y: 30 }}

@@ -1,6 +1,6 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "animate.css";
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   font-family: "Inter", sans-serif;
@@ -8,6 +8,10 @@ body {
 
 .App {
   text-align: center;
+}
+
+.app-text {
+  font-family: "Noto Serif", serif;
 }
 
 .App-logo {

@@ -115,6 +115,23 @@ const StatsContainer = styled.div`
   margin-top: 2rem;
 `;
 
+const FeatureQuote = styled.p`
+  color: #e0e0e0;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-top: 1rem;
+
+  &::before {
+    content: "“";
+    margin-right: 0.5rem;
+  }
+
+  &::after {
+    content: "”";
+    margin-left: 0.5rem;
+  }
+`;
+
 const IconWrapper = styled.div<{ $index: number }>`
   width: 100px;
   height: 100px;
@@ -173,36 +190,65 @@ const StatItem = styled.div`
 const features = [
   {
     icon: "🚀",
-    title: "Revolutionary Performance",
+    title: "Byte-Sized Learning",
     description:
-      "Experience lightning-fast speeds with our optimized architecture and innovative technology stack.",
+      "Trending content, curated for you, delivered in card-based slides under 450 characters.",
+    quote: "No fluff, just facts.",
     gridArea: "main",
     stats: [
-      { value: "500K+", label: "Active Users" },
-      { value: "99.9%", label: "Uptime" },
+      {
+        value: "50-60%",
+        label: "Faster Learning",
+        description:
+          "No more scrolling through irrelevant content—just high-impact insights curated for maximum results in minimum time.",
+      },
+      {
+        value: "40%",
+        label: "More Job Readiness",
+        description:
+          "Structured career guidance means no more guessing what to put on your resume or LinkedIn—just clear, data-backed advice.",
+      },
+      {
+        value: "30%",
+        label: "More Practical Knowledge",
+        description:
+          "Real-world coding challenges, quizzes, products, and repos help you bridge the theory-to-practice gap faster than ever.",
+      },
+      {
+        value: "100%",
+        label: "More Confidence",
+        description:
+          "You won’t just learn—you’ll actually apply and master skills that make you job-ready.",
+      },
     ],
   },
   {
     icon: "🔒",
-    title: "Enterprise Security",
+    title: "Daily Career Challenges",
     description:
-      "Bank-grade encryption and security protocols to keep your data safe.",
+      "One article, one coding problem, one quiz, one sentence, one tech fact to improve communication.",
+    quote: "Small daily wins that add up BIG over time.",
   },
   {
     icon: "🎯",
-    title: "Smart Integration",
-    description: "Seamlessly connect with your favorite tools and platforms.",
+    title: "Real-Time Coding Practice",
+    description:
+      "Get real industry-level coding problems based on your preferred language and skill level. Get the challenge and try at your own coding environment.",
+    quote: "Not just LeetCode—REAL problems.",
   },
   {
     icon: "🔄",
-    title: "Real-time Sync",
+    title: "Interactive Writing",
     description:
-      "Stay updated across all your devices with instant synchronization.",
+      "Write and get AI analysis and feedback on your own writing. No more dry, boring writing exercises. ",
+    quote: "Just write and get better",
   },
   {
     icon: "📱",
-    title: "Cross-Platform",
-    description: "Available on all major platforms and devices.",
+    title: "Leaderboard & Streaks",
+    description:
+      "Compete with students from various colleges, maintain streaks, and see how you rank in learning, coding, and quizzes.",
+    quote: "Learning should be as addictive as social media.",
   },
 ];
 
@@ -236,6 +282,7 @@ const FeatureGrid = () => {
                 </IconWrapper>
                 <FeatureTitle>{feature.title}</FeatureTitle>
                 <FeatureDescription>{feature.description}</FeatureDescription>
+                <FeatureQuote>{feature.quote}</FeatureQuote>
                 <StatsContainer>
                   {feature.stats?.map((stat, statIndex) => (
                     <StatItem key={statIndex}>
@@ -260,6 +307,7 @@ const FeatureGrid = () => {
               </IconWrapper>
               <FeatureTitle>{feature.title}</FeatureTitle>
               <FeatureDescription>{feature.description}</FeatureDescription>
+              <FeatureQuote>{feature.quote}</FeatureQuote>
             </BentoCard>
           )
         )}

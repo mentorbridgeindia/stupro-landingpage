@@ -120,7 +120,13 @@ export const CutsSection = () => {
     <div className="cuts-section mt-5 mx-5">
       <div className="sub-title">5 CUTS</div>
       <div style={{ margin: "1rem 10rem" }}>
-        <h6 className="mx-5" style={{ lineHeight: "2rem" }}>
+        <h6
+          className="mx-5"
+          style={{
+            lineHeight: "2.5rem",
+            fontSize: "1rem",
+          }}
+        >
           A girl living near a forest with her grandmother had no one to buy her
           toys. Her friends shared theirs, but she longed for her own.
           Determined, she took an axe and struck a tree five times each day—no
@@ -128,9 +134,11 @@ export const CutsSection = () => {
           toys. That's the power of consistency. Just like her, consistent
           effort leads to achieving your goals. <br />
         </h6>
-        <h5 className="fs-4 mt-2">Keep learning, keep preparing!</h5>
       </div>
-      <Row className="mx-5 my-5">
+      <h5 className="fs-4 mt-4 app-text mb-4">
+        Keep learning, keep preparing!
+      </h5>
+      <Row className="mx-5 mt-5 mb-3">
         {cuts.map((cut, index) => (
           <Col sm={12} md={6} lg={4} key={index} className="mb-5">
             {renderCut(cut, index)}
