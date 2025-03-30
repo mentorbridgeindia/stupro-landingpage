@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import BentoGrid from "../components/BentoGrid";
+import ContactUs from "../components/ContactUs";
+import { CutsSection } from "../components/CutsSection";
 import DownloadCTA from "../components/DownloadCTA";
 import FAQSection from "../components/FAQSection";
 import FeatureGrid from "../components/FeatureGrid";
@@ -7,7 +9,6 @@ import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import USPSection from "../components/USPSection";
-import { CutsSection } from "../components/CutsSection";
 
 const PageWrapper = styled.div`
   overflow-x: hidden;
@@ -30,6 +31,7 @@ const Home = () => {
       <BentoGrid />
       <FAQSection />
       <DownloadCTA />
+      <ContactUs />
       <Footer />
     </PageWrapper>
   );

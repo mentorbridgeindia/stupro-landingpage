@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useState } from "react";
+import styled from "styled-components";
 
 const USPContainer = styled.section`
   padding: 8rem 5%;
@@ -46,7 +46,7 @@ const ContentColumn = styled.div`
 `;
 
 const USPTitle = styled(motion.h2)`
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 800;
   background: linear-gradient(120deg, #dcaa14, #dcaa14);
   -webkit-background-clip: text;
@@ -125,7 +125,7 @@ const ImageColumn = styled(motion.div)`
 
 const FloatingImage = styled(motion.img)`
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   height: auto;
   border-radius: 24px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -146,32 +146,52 @@ const FloatingShape = styled(motion.div)`
 
 const features = [
   {
-    icon: "🎯",
-    title: "Precision Perfect",
+    icon: "🛡️",
+    title: "30% More Practical Knowledge",
     description:
-      "Advanced algorithms ensure pixel-perfect accuracy in every task.",
+      "Real-world coding challenges, quizzes, products, and repos help you bridge the theory-to-practice gap faster than ever",
   },
   {
     icon: "⚡",
-    title: "Lightning Fast",
+    title: "40% More Job Readiness",
     description:
-      "Optimized performance delivers instant results when you need them.",
+      "Structured career guidance means no more guessing what to put on your resume or LinkedIn—just clear, data-backed advice.",
   },
   {
-    icon: "🛡️",
-    title: "Bulletproof Security",
-    description: "Enterprise-grade security keeps your data safe and private.",
+    icon: "🎯",
+    title: "50-60% Faster Learning",
+    description:
+      "No more scrolling through irrelevant content—just high-impact insights curated for maximum results in minimum time.",
+  },
+  {
+    icon: "🎯",
+    title: "100% More Confidence",
+    description:
+      "You won’t just learn—you’ll actually apply and master skills that make you job-ready.",
   },
 ];
 
 const USPSection = () => {
+  const [imageIndex, setImageIndex] = useState(0);
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.8, 0.6]);
+  const imagePaths = [
+    "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/usp-1.png",
+    "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/usp-2.png",
+    "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/usp-3.png",
+    "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/usp-4.png",
+  ];
+
+  const changeImage = () => {
+    setTimeout(() => {
+      setImageIndex((prevIndex) => (prevIndex + 1) % 4);
+    }, 6000);
+  };
 
   return (
     <USPContainer id="features">
-      <div className="sub-title">WHY STUPRO?</div>
+      <div className="sub-title">HOW STUPRO HELPS YOU?</div>
       <BackgroundGlow />
       <Grid>
         <ContentColumn>
@@ -183,7 +203,7 @@ const USPSection = () => {
           >
             <USPTitle>Transform Your Experience</USPTitle>
             <USPDescription>
-              Experience the next level of mobile applications with our
+              Experience the next level of learning experience with our
               cutting-edge features and unparalleled performance. We've
               reimagined what's possible.
             </USPDescription>
@@ -243,12 +263,11 @@ const USPSection = () => {
             }}
           />
           <FloatingImage
-            src="/path-to-your-app-screenshot.png"
+            src={imagePaths[imageIndex]}
             alt="App Features"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            // transition={{ duration: 0.8 }}
             animate={{
               y: [0, -20, 0],
             }}
@@ -257,6 +276,7 @@ const USPSection = () => {
               repeat: Infinity,
               ease: "easeInOut",
             }}
+            onLoad={changeImage}
           />
         </ImageColumn>
       </Grid>

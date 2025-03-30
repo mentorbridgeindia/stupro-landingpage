@@ -68,7 +68,7 @@ const CTAButton = styled(motion.button)`
   font-weight: 600;
   background: linear-gradient(120deg, #dcaa14, #dcaa14);
   border: none;
-  border-radius: 30px;
+  border-radius: 12px;
   color: white;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -80,8 +80,8 @@ const CTAButton = styled(motion.button)`
 
 const PhoneWrapper = styled(motion.div)`
   position: relative;
-  width: 40%;
-  max-width: 400px;
+  min-width: 50%;
+  max-width: 600px;
 `;
 
 const HeroSection = () => {
@@ -132,9 +132,9 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.6 }}
         >
           <img
-            src="/path-to-your-app-mockup.png"
+            src="https://wfkq0nguanh0273r.public.blob.vercel-storage.com/hero-mockup.png"
             alt="App Preview"
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "100%", height: "auto", minWidth: "900px" }}
           />
         </PhoneWrapper>
       </Parallax>

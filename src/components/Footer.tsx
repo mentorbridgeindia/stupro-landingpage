@@ -29,6 +29,7 @@ const FooterColumn = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  justify-content: center;
 `;
 
 const Logo = styled.div`
@@ -44,12 +45,18 @@ const FooterText = styled.p`
   color: #fff;
   line-height: 1.6;
   font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "Noto Serif", serif;
+  letter-spacing: 0.09em;
 `;
 
 const FooterTitle = styled.h4`
   color: #ffffff;
   font-size: 1.1rem;
   margin-bottom: 1rem;
+  font-weight: 600;
+  font-family: "Noto Serif", serif;
+  letter-spacing: 0.09em;
 `;
 
 const FooterLink = styled.a`
@@ -58,10 +65,16 @@ const FooterLink = styled.a`
   font-size: 0.9rem;
   transition: color 0.3s ease;
   font-family: "Noto Serif", serif;
+  letter-spacing: 0.075em;
 
   &:hover {
     color: #000;
   }
+`;
+
+const Name = styled.h5`
+  font-family: "Noto Serif", serif;
+  letter-spacing: 0.2rem;
 `;
 
 const SocialLinks = styled.div`
@@ -122,6 +135,7 @@ const Footer = () => {
               style={{ width: "125px", height: "150px" }}
             />
           </Logo>
+          <Name>STUPRO</Name>
         </FooterColumn>
 
         <FooterColumn

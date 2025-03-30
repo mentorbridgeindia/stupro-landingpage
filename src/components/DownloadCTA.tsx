@@ -117,7 +117,7 @@ const DownloadCTA = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
         >
-          Join millions of users who have already transformed their mobile
+          Join the users who have already transformed their learning
           experience. Download our app today and start your journey.
         </Description>
         <ButtonGroup
