@@ -233,15 +233,15 @@ const ContactUs = () => {
           <InfoCard whileHover={{ scale: 1.02 }} transition={{ duration: 0.3 }}>
             <InfoItem>
               <FiMapPin />
-              <p>123 Innovation Street, Tech Valley, Silicon City, 12345</p>
+              <p>Dindigul - 624401</p>
             </InfoItem>
             <InfoItem>
               <FiMail />
-              <p>contact@yourcompany.com</p>
+              <p>hello@stupro.info</p>
             </InfoItem>
             <InfoItem>
               <FiPhone />
-              <p>+1 (234) 567-8900</p>
+              <p>+91 9176008807</p>
             </InfoItem>
           </InfoCard>
         </ContactForm>
