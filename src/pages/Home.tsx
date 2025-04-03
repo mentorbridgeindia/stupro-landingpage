@@ -31,7 +31,7 @@ const Home = () => {
       {/* <MobileViewSection /> */}
       <BentoGrid />
       <FAQSection />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <DownloadCTA />
       <ContactUs />
       <Footer />

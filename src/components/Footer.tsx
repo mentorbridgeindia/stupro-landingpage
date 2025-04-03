@@ -138,7 +138,7 @@ const Footer = () => {
           <Name>STUPRO</Name>
         </FooterColumn>
 
-        <FooterColumn
+        {/* <FooterColumn
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -147,9 +147,9 @@ const Footer = () => {
           <FooterTitle>Company</FooterTitle>
           <FooterLink href="#about">About Us</FooterLink>
           <FooterLink href="#blog">Blog</FooterLink>
-        </FooterColumn>
+        </FooterColumn> */}
 
-        <FooterColumn
+        {/* <FooterColumn
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -158,7 +158,7 @@ const Footer = () => {
           <FooterTitle>Resources</FooterTitle>
           <FooterLink href="#docs">Documentation</FooterLink>
           <FooterLink href="#community">Community</FooterLink>
-        </FooterColumn>
+        </FooterColumn> */}
 
         <FooterColumn
           initial={{ opacity: 0, y: 20 }}

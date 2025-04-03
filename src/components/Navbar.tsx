@@ -16,7 +16,7 @@ const NavContainer = styled(motion.nav)`
   align-items: center;
 `;
 
-const Logo = styled.div`
+const Logo = styled.a`
   font-size: 1.5rem;
   font-weight: 700;
   background: #ffffff;
@@ -129,7 +129,7 @@ const Navbar = ({ isHome = false }: { isHome?: boolean }) => {
             : "transparent",
         }}
       >
-        <Logo>
+        <Logo href="/#">
           <img
             src="https://wfkq0nguanh0273r.public.blob.vercel-storage.com/logo-alone.png"
             alt="Logo"
@@ -143,7 +143,7 @@ const Navbar = ({ isHome = false }: { isHome?: boolean }) => {
             <NavLink href="/">Home</NavLink>
           ) : (
             <>
-              <NavLink href="#about">About</NavLink>
+              {/* <NavLink href="#about">About</NavLink> */}
               <NavLink href="#contact">Contact</NavLink>
             </>
           )}
@@ -170,7 +170,7 @@ const Navbar = ({ isHome = false }: { isHome?: boolean }) => {
               <NavLink href="/">Home</NavLink>
             ) : (
               <>
-                <NavLink href="/#about">About</NavLink>
+                {/* <NavLink href="/#about">About</NavLink> */}
                 <NavLink href="/#contact">Contact</NavLink>
               </>
             )}

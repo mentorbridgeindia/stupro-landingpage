@@ -5,7 +5,8 @@ import "./App.css";
 import Home from "./pages/Home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
-import BlogHome from "./pages/BlogHome";
+import BlogHome from "./pages/Blog/BlogHome";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
               path="/terms-and-conditions"
               element={<TermsAndConditions />}
             />
+            <Route path="/about" element={<About />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/blog" element={<BlogHome />} />
           </Routes>
