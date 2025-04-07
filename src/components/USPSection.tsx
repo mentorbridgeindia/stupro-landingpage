@@ -1,6 +1,8 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useState } from "react";
 import styled from "styled-components";
+import Lottie from "lottie-react";
+import animationData from "../assets/scene3.json";
 
 const USPContainer = styled.section`
   padding: 8rem 5%;
@@ -118,9 +120,12 @@ const FeatureContent = styled.div`
 const ImageColumn = styled(motion.div)`
   position: relative;
   height: 100%;
+  width: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  left: 50;
 `;
 
 const FloatingImage = styled(motion.img)`
@@ -176,18 +181,18 @@ const USPSection = () => {
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.8, 0.6]);
-  const imagePaths = [
-    "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/usp-1.png",
-    "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/usp-2.png",
-    "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/usp-3.png",
-    "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/usp-4.png",
-  ];
+  // const imagePaths = [
+  //   "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/usp-1.png",
+  //   "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/usp-2.png",
+  //   "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/usp-3.png",
+  //   "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/usp-4.png",
+  // ];
 
-  const changeImage = () => {
-    setTimeout(() => {
-      setImageIndex((prevIndex) => (prevIndex + 1) % 4);
-    }, 6000);
-  };
+  // const changeImage = () => {
+  //   setTimeout(() => {
+  //     setImageIndex((prevIndex) => (prevIndex + 1) % 4);
+  //   }, 6000);
+  // };
 
   return (
     <USPContainer id="features">
@@ -232,7 +237,7 @@ const USPSection = () => {
           </FeatureList>
         </ContentColumn>
         <ImageColumn style={{ y, opacity }}>
-          <FloatingShape
+          {/* <FloatingShape
             animate={{
               scale: [1, 1.2, 1],
               rotate: [0, 180, 360],
@@ -241,13 +246,13 @@ const USPSection = () => {
               duration: 20,
               repeat: Infinity,
               ease: "linear",
-            }}
-            style={{
-              top: "10%",
-              right: "20%",
-            }}
-          />
-          <FloatingShape
+            }} */}
+            {/* // style={{
+            //   top: "10%",
+            //   right: "20%",
+            // }}
+          /> */}
+          {/* <FloatingShape
             animate={{
               scale: [1.2, 1, 1.2],
               rotate: [360, 180, 0],
@@ -277,7 +282,8 @@ const USPSection = () => {
               ease: "easeInOut",
             }}
             onLoad={changeImage}
-          />
+          /> */}
+          <Lottie animationData={animationData} loop={true} style={{width: "100%", height: "100%"}}/>
         </ImageColumn>
       </Grid>
     </USPContainer>
