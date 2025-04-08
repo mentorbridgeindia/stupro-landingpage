@@ -7,6 +7,9 @@ import { ReactComponent as ByteIcon } from "../assets/byte.svg";
 import { ReactComponent as Guide } from "../assets/guide.svg";
 import { ReactComponent as Hand } from "../assets/hand.svg";
 import { ReactComponent as Logo } from "../assets/logo.svg";
+import FallingText from '../reactBits/FallingText/FallingText';
+import ShinyText from '../reactBits/ShineyText/ShineyText';
+import "../reactBits/ShineyText/ShinewText.css";
 import "./BentoGrid.css";
 const BentoGrid = () => {
   return (
@@ -17,10 +20,10 @@ const BentoGrid = () => {
           <Row className="g-3">
             <Col md={12} lg={3}>
               <div className="d-flex flex-column justify-content-between gap-2">
-                <Card className="left-card">
+                <Card className="shiny-text left-card" style={{ animationDuration: "5s" }}>
                   <Card.Body>
                     <ByteIcon />
-                    <h3 className="mt-3 text-white mb-2">
+                    <h3 className=" mt-3 text-white mb-2">
                       Byte sized learning
                     </h3>
                     <h6 className="pt-5">Content not exceeding </h6>
@@ -30,7 +33,7 @@ const BentoGrid = () => {
                 </Card>
                 <Card className="left-card h-500">
                   <Card.Body>
-                    <h1 className="left-text left-num">5 cuts</h1>
+                    {/* <h1 className="left-text left-num">5 cuts</h1>
                     <h6 className="text-white">Daily Challenges</h6>
                     <div className="cat-1 cat-text">
                       <span className="ellipse pink"></span>
@@ -51,7 +54,19 @@ const BentoGrid = () => {
                     <div className="cat-5  cat-text">
                       <span className="ellipse purple"></span>
                       <h6 className="cat-2-text">Knowledge</h6>
-                    </div>
+                    </div> */}
+                    <FallingText
+                      // text={`In today's Bits article, we explore animated components in React through a fun coding quiz to boost your knowledge sentence by sentence.`}
+                      text = {` React Bits Animated Components Simplify Sentence Coding Quiz Knowledge Article `}
+                      highlightWords={["React", "Bits", "animated", "components", "simplify","sentence","coding","quiz","knowledge","article"]}
+                      highlightClass="highlighted"
+                      trigger="hover"
+                      backgroundColor="transparent"
+                      wireframes={false}
+                      gravity={0.56}
+                      fontSize="2rem"
+                      mouseConstraintStiffness={0.9}
+/>
                   </Card.Body>
                 </Card>
               </div>
@@ -59,7 +74,7 @@ const BentoGrid = () => {
             <Col md={12} lg={6}>
               <div className="d-flex flex-column justify-content-center align-items-center gap-2">
                 <EllipseCard />
-                <div className="position-absolute translate-middle-x logo">
+                <div className="position-absolute top-50 start-50 translate-middle logo">
                   <Logo />
                 </div>
                 <div className="d-flex justify-content-center gap-2 w-100">

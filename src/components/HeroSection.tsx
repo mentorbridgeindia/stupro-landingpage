@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
 import styled from "styled-components";
+import animationData from "../assets/Scene1.json"
+import Lottie from "lottie-react";
 
 const HeroContainer = styled.section`
   min-height: 100vh;
@@ -10,7 +12,6 @@ const HeroContainer = styled.section`
   padding: 0 5%;
   position: relative;
   overflow: hidden;
-  position: relative;
   z-index: 1;
 
   &::before {
@@ -80,8 +81,10 @@ const CTAButton = styled(motion.button)`
 
 const PhoneWrapper = styled(motion.div)`
   position: relative;
-  min-width: 50%;
-  max-width: 600px;
+  min-width: 600px;
+  height: auto;
+  max-width: 100%;
+  display: flex;
 `;
 
 const HeroSection = () => {
@@ -131,11 +134,14 @@ const HeroSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          <img
+          {/* <img
             src="https://wfkq0nguanh0273r.public.blob.vercel-storage.com/hero-mockup.png"
             alt="App Preview"
             style={{ width: "100%", height: "auto", minWidth: "900px" }}
-          />
+          /> */}
+          <div style={{ minWidth: "50%", maxWidth: "100%", height: "auto", position: "relative" }}>
+          <Lottie animationData={animationData} loop={true} />
+          </div>
         </PhoneWrapper>
       </Parallax>
     </HeroContainer>
