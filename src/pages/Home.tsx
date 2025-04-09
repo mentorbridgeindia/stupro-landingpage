@@ -10,6 +10,7 @@ import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import USPSection from "../components/USPSection";
 import TeamSection from "../components/TeamSection";
+import MobileViewSection from "../components/MobileViewSection";
 
 const PageWrapper = styled.div`
   overflow-x: hidden;
@@ -31,7 +32,7 @@ const Home = () => {
       {/* <MobileViewSection /> */}
       <BentoGrid />
       <FAQSection />
-      {/* <TeamSection /> */}
+{/*       <TeamSection /> */}
       <DownloadCTA />
       <ContactUs />
       <Footer />
