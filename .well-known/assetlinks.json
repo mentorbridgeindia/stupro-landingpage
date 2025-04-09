@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.stupro",
+      "sha256_cert_fingerprints": [
+        "50:EB:D9:BF:72:88:6F:0D:03:EB:CB:5E:00:31:C6:AC:3B:F1:FA:69:EE:A1:0D:ED:CE:DF:48:1F:06:58:41:51"
+      ]
+    }
+  }
+]
