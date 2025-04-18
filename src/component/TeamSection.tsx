@@ -213,7 +213,7 @@ const teamMembers = [
     department: "Frontend",
     image:
       "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/mentorbridge-pics/Subash.jpg",
-    bio: "Tech innovator specializing in AI and UI/UX design.",
+    bio: "Tech innovator and Passionate about creating innovative solutions and leading teams to success.",
     social: {
       linkedin: "https://www.linkedin.com/in/subash-natrayan-r-m-4654aa319",
       github: "https://github.com/Thunderscotch",
@@ -252,7 +252,7 @@ const teamMembers = [
     department: "Frontend",
     image:
       "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/mentorbridge-pics/balakrishnan.jpg",
-    bio: "Expert in backend development with a focus on scalable architecture.",
+    bio: "Expert in frontend development with a focus on scalable architecture.",
     social: {
       linkedin: "https://linkedin.com/in/bala-krishnan-bk",
       github: "https://github.com/SBKrishnan",
