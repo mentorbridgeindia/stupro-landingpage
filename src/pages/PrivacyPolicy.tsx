@@ -8,8 +8,8 @@ import {
   FiUserPlus,
 } from "react-icons/fi";
 import styled from "styled-components";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Footer from "../component/Footer";
+import Navbar from "../component/Navbar";
 
 const PageContainer = styled.div`
   min-height: 100vh;

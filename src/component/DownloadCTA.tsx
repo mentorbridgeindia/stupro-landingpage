@@ -130,6 +130,7 @@ const DownloadCTA = () => {
             href="#"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => {window.location.href = "https://play.google.com/store/apps/details?id=com.stupro";}}
           >
             <div className="store-icon">
               <PlayStoreSvg />
