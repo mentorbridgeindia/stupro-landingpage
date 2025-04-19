@@ -123,6 +123,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => {window.location.href = "https://play.google.com/store/apps/details?id=com.stupro";}}
         >
           Get Started Now
         </CTAButton>

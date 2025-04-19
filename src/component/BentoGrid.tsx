@@ -57,8 +57,8 @@ const BentoGrid = () => {
                     </div> */}
                     <FallingText
                       // text={`In today's Bits article, we explore animated components in React through a fun coding quiz to boost your knowledge sentence by sentence.`}
-                      text = {` React Bits Animated Components Simplify Sentence Coding Quiz Knowledge Article `}
-                      highlightWords={["React", "Bits", "animated", "components", "simplify","sentence","coding","quiz","knowledge","article"]}
+                      text = {` Daily Challenges Learning Sentence Coding Quiz Knowledge Article Confidence `}
+                      highlightWords={["challenge","daily","learning","sentence","coding","quiz","knowledge","article", "confidence"]}
                       highlightClass="highlighted"
                       trigger="hover"
                       backgroundColor="transparent"

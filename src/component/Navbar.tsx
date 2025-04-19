@@ -147,7 +147,7 @@ const Navbar = ({ isHome = false }: { isHome?: boolean }) => {
               <NavLink href="#contact">Contact</NavLink>
             </>
           )}
-          <CTAButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <CTAButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={() => {window.location.href = "https://play.google.com/store/apps/details?id=com.stupro";}}>
             Download Now
           </CTAButton>
         </NavLinks>

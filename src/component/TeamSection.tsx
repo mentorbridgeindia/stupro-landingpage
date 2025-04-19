@@ -89,6 +89,10 @@ const TeamGrid = styled.div`
 
 const TeamCard = styled(motion.div)`
   background: rgba(255, 255, 255, 0.02);
+  // max-width: 100%
+  width: 300px;
+  // max-height: auto;
+  height: 100%;
   backdrop-filter: blur(10px);
   border-radius: 24px;
   overflow: hidden;
@@ -119,7 +123,7 @@ const MemberImage = styled.div`
 
   img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     transition: transform 0.5s ease;
   }
@@ -191,135 +195,135 @@ const SocialIcon = styled(motion.a)`
 
 const teamMembers = [
   {
-    name: "Ravindra Jadeja",
+    name: "Meena",
     role: "Analyst",
     department: "Analyst",
     image:
-      "https://static.cricbuzz.com/a/img/v1/152x152/i1/c616520/ravindra-jadeja.jpg",
+      "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/mentorbridge-pics/meena.jpg",
     bio: "Full Stack Developer with a passion for creating innovative solutions.",
     social: {
-      linkedin: "https://linkedin.com/in/johndoe",
-      github: "https://github.com/johndoe",
-      twitter: "https://twitter.com/johndoe",
+      linkedin: "https://www.linkedin.com/in/meena-34-b59912268/",
+      github: "https://github.com/MeenaSivakumar",
+      twitter: "",
     },
   },
   {
-    name: "Dhoni",
-    role: "Backend Engineer",
-    department: "Backend",
+    name: "Subash Natrayan",
+    role: "Frontend Lead Engineer",
+    department: "Frontend",
     image:
-      "https://static.cricbuzz.com/a/img/v1/152x152/i1/c170677/ms-dhoni.jpg",
-    bio: "Tech innovator specializing in AI and Java Spring Boot.",
+      "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/mentorbridge-pics/Subash.jpg",
+    bio: "Tech innovator and Passionate about creating innovative solutions and leading teams to success.",
     social: {
-      linkedin: "https://linkedin.com/in/sarahchen",
-      github: "https://github.com/sarahchen",
-      twitter: "https://twitter.com/sarahchen",
+      linkedin: "https://www.linkedin.com/in/subash-natrayan-r-m-4654aa319",
+      github: "https://github.com/Thunderscotch",
+      twitter: "",
     },
   },
   {
-    name: "Kohli",
+    name: "Bavani",
     role: "Frontend Engineer",
     department: "Frontend",
     image:
-      "https://static.cricbuzz.com/a/img/v1/152x152/i1/c616517/virat-kohli.jpg",
+      "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/mentorbridge-pics/bavani.jpg",
     bio: "Frontend Developer with a passion for clean code.",
     social: {
-      linkedin: "https://linkedin.com/in/mikejohnson",
-      github: "https://github.com/mikejohnson",
-      twitter: "https://twitter.com/mikejohnson",
+      linkedin: "https://www.linkedin.com/in/bavani-kannan-b15938287/",
+      github: "https://github.com/bavanikannan12",
+      twitter: "",
     },
   },
   {
-    name: "Rohit Sharma",
-    role: "UI/UX Lead",
-    department: "Design",
+    name: "Nithya Bala",
+    role: "Frontend Dev Engineer",
+    department: "Frontend",
     image:
-      "https://static.cricbuzz.com/a/img/v1/152x152/i1/c616514/rohit-sharma.jpg",
+      "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/mentorbridge-pics/Nithya_Bala_M.jpg",
     bio: "Creating intuitive and beautiful user experiences.",
     social: {
-      linkedin: "https://linkedin.com/in/emmawilson",
-      github: "https://github.com/emmawilson",
-      twitter: "https://twitter.com/emmawilson",
+      linkedin: "https://www.linkedin.com/in/nithyabala02/",
+      github: "https://github.com/Nithyabala2004",
+      twitter: "",
     },
   },
   {
-    name: "Hardik Pandya",
-    role: "Backend Engineer",
-    department: "Backend",
-    image:
-      "https://static.cricbuzz.com/a/img/v1/152x152/i1/c616519/hardik-pandya.jpg",
-    bio: "Expert in backend development with a focus on scalable architecture.",
-    social: {
-      linkedin: "https://linkedin.com/in/janesmith",
-      github: "https://github.com/janesmith",
-      twitter: "https://twitter.com/janesmith",
-    },
-  },
-  {
-    name: "Bhuvneshwar Kumar",
-    role: "UI/UX Designer",
-    department: "Design",
-    image:
-      "https://static.cricbuzz.com/a/img/v1/152x152/i1/c244967/bhuvneshwar-kumar.jpg",
-    bio: "Creating beautiful and intuitive user experiences through design.",
-    social: {
-      linkedin: "https://linkedin.com/in/mikejohnson",
-      github: "https://github.com/mikejohnson",
-      twitter: "https://twitter.com/mikejohnson",
-    },
-  },
-  {
-    name: "Shreyas Iyer",
-    role: "Frontend Engineer",
+    name: "Bala Krishnan",
+    role: "Frontend Dev Engineer",
     department: "Frontend",
     image:
-      "https://static.cricbuzz.com/a/img/v1/152x152/i1/c616518/shreyas-iyer.jpg",
-    bio: "Passionate about creating innovative solutions and leading teams to success.",
-    social: {
-      linkedin: "https://linkedin.com/in/johndoe",
-      github: "https://github.com/johndoe",
-      twitter: "https://twitter.com/johndoe",
-    },
-  },
-  {
-    name: "Shubman Gill",
-    role: "Frontend Engineer",
-    department: "Frontend",
-    image:
-      "https://static.cricbuzz.com/a/img/v1/152x152/i1/c616515/shubman-gill.jpg",
+      "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/mentorbridge-pics/balakrishnan.jpg",
     bio: "Expert in frontend development with a focus on scalable architecture.",
     social: {
-      linkedin: "https://linkedin.com/in/janesmith",
-      github: "https://github.com/janesmith",
-      twitter: "https://twitter.com/janesmith",
+      linkedin: "https://linkedin.com/in/bala-krishnan-bk",
+      github: "https://github.com/SBKrishnan",
+      twitter: "",
     },
   },
   {
-    name: "Jasprit Bumrah",
+    name: "Sakthi Priya",
     role: "UI/UX Designer",
     department: "Design",
     image:
-      "https://static.cricbuzz.com/a/img/v1/152x152/i1/c591949/jasprit-bumrah.jpg",
+      "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/mentorbridge-pics/Sakthi_Priya_S.jpg",
     bio: "Creating beautiful and intuitive user experiences through design.",
     social: {
-      linkedin: "https://linkedin.com/in/mikejohnson",
-      github: "https://github.com/mikejohnson",
-      twitter: "https://twitter.com/mikejohnson",
+      linkedIn: "https://www.linkedin.com/in/karthekeyan-m/",
+      gitHub: "https://github.com/karthi049",
+      twitter: "",
     },
   },
   {
-    name: "Ravichandran Ashwin",
-    role: "UI/UX Lead",
-    department: "Design",
+    name: "Kiruthika",
+    role: "Frontend Engineer",
+    department: "Frontend",
     image:
-      "https://static.cricbuzz.com/a/img/v1/152x152/i1/c591961/ravichandran-ashwin.jpg",
-    bio: "Creating intuitive and beautiful user experiences.",
+      "https://wfkq0nguanh0273r.public.blob.vercel-storage.com/mentorbridge-pics/Kiruthika_G.jpeg",
+    bio: "Passionate about creating innovative solutions and leading teams to success.",
     social: {
-      linkedin: "https://linkedin.com/in/emmawilson",
-      github: "https://github.com/emmawilson",
-      twitter: "https://twitter.com/emmawilson",
+      linkedIn: "https://www.linkedin.com/in/nithyabala02/",
+      gitHub: "https://github.com/Nithyabala2004",
+      twitter: "",
     },
   },
+  // {
+  //   name: "Shubman Gill",
+  //   role: "Frontend Engineer",
+  //   department: "Frontend",
+  //   image:
+  //     "https://static.cricbuzz.com/a/img/v1/152x152/i1/c616515/shubman-gill.jpg",
+  //   bio: "Expert in frontend development with a focus on scalable architecture.",
+  //   social: {
+  //     linkedin: "https://linkedin.com/in/janesmith",
+  //     github: "https://github.com/janesmith",
+  //     twitter: "https://twitter.com/janesmith",
+  //   },
+  // },
+  // {
+  //   name: "Jasprit Bumrah",
+  //   role: "UI/UX Designer",
+  //   department: "Design",
+  //   image:
+  //     "https://static.cricbuzz.com/a/img/v1/152x152/i1/c591949/jasprit-bumrah.jpg",
+  //   bio: "Creating beautiful and intuitive user experiences through design.",
+  //   social: {
+  //     linkedin: "https://linkedin.com/in/mikejohnson",
+  //     github: "https://github.com/mikejohnson",
+  //     twitter: "https://twitter.com/mikejohnson",
+  //   },
+  // },
+  // {
+  //   name: "Ravichandran Ashwin",
+  //   role: "UI/UX Lead",
+  //   department: "Design",
+  //   image:
+  //     "https://static.cricbuzz.com/a/img/v1/152x152/i1/c591961/ravichandran-ashwin.jpg",
+  //   bio: "Creating intuitive and beautiful user experiences.",
+  //   social: {
+  //     linkedin: "https://linkedin.com/in/emmawilson",
+  //     github: "https://github.com/emmawilson",
+  //     twitter: "https://twitter.com/emmawilson",
+  //   },
+  // },
 ];
 
 const departments = ["All", "Analyst", "Backend", "Frontend", "Design"];
@@ -409,7 +413,7 @@ const TeamSection = () => {
                   >
                     <FiGithub size={20} />
                   </SocialIcon>
-                  <SocialIcon
+                  {/* <SocialIcon
                     href={member.social.twitter}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -417,7 +421,7 @@ const TeamSection = () => {
                     whileTap={{ scale: 0.9 }}
                   >
                     <FiTwitter size={20} />
-                  </SocialIcon>
+                  </SocialIcon> */}
                 </SocialLinks>
               </MemberInfo>
             </TeamCard>
